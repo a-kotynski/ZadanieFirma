@@ -43,15 +43,15 @@ namespace ZadanieFirma
         }
         public int PensjaKontrakt()
         {
-            int staz = 1000;
-            int etat = 5000;
+            int stazPensja = 1000;
+            int etatPensja = 5000;
 
             switch (Kontrakt)
             {
                 case NazwaKontraktu.Staz:
-                    return staz;
+                    return stazPensja;
                 case NazwaKontraktu.Etat:
-                    return etat;
+                    return etatPensja;
                 default:
                     return 0;
             }
