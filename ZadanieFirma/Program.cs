@@ -21,11 +21,29 @@ namespace ZadanieFirma
         public string Imie { get; set; }
         public string Nazwisko { get; set; }
         public NazwaKontraktu Kontrakt { get; set; }
-        public Pracownik(string imie, string nazwisko)
+        public Pracownik()
+        {
+
+        }
+        public Pracownik(string imie, string nazwisko, NazwaKontraktu? kontrakt)
         {
             Imie = imie;
             Nazwisko = nazwisko;
-            Kontrakt = (NazwaKontraktu)0;
+            switch (kontrakt)
+            {
+                case null:
+                    Kontrakt = (NazwaKontraktu)0;
+                    break;
+                case NazwaKontraktu.Staz:
+                    Kontrakt = (NazwaKontraktu)0;
+                    break;
+                case NazwaKontraktu.Etat:
+                    Kontrakt = (NazwaKontraktu)1;
+                    break;
+                default:
+                    break;
+            }
+            
         }
         public void ZmianaKontraktu(string zmianaKontraktu)
         {
@@ -41,7 +59,7 @@ namespace ZadanieFirma
                     break;
             }
         }
-        public int PensjaKontrakt()
+        public int Pensja()
         {
             int stazPensja = 1000;
             int etatPensja = 5000;
@@ -55,6 +73,17 @@ namespace ZadanieFirma
                 default:
                     return 0;
             }
+        }
+        //public string ToString()
+        //{
+
+        //}
+    }
+    public class Kontrakt
+    {
+        public void Wynagrodzenie()
+        {
+            // ta metoda ma zwracać wynik metody Pensja() z klasy Pracownik?
         }
     }
     class Program
