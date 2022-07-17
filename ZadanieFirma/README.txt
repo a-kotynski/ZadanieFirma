@@ -1,22 +1,23 @@
 ﻿Zadanie: Firma
+
 Utwórz podstawy systemu zarządzania pracownikami w pewnej firmie. Zaimplementuj klasę reprezentującą pracownika.
 Każdy pracownik opisany jest właściwościami:
 
-DONE * imię i nazwisko
-DONE * kontrakt
+* imię i nazwisko
+* kontrakt
 
 Klasa reprezentująca pracownika udostępnia operacje:
 
-DONE * konstruktor inicjujący pracownika o podanym w argumentach imieniu i nazwisku z domyślnym kontraktem stażysty
-DONE * metodę pozwalającą zmienić kontrakt przypisany do pracownika
-DONE * metoda zwracająca wysokość pensji pracownika uzależnionej od podpisanego kontraktu
+* konstruktor inicjujący pracownika o podanym w argumentach imieniu i nazwisku z domyślnym kontraktem stażysty
+* metodę pozwalającą zmienić kontrakt przypisany do pracownika
+* metoda zwracająca wysokość pensji pracownika uzależnionej od podpisanego kontraktu
 JAKIMI PARAMETRAMI DOCIĄŻYĆ? * dociążoną metodę ToString() zwierającą łańcuch znakowy zawierający imię, nazwisko i wysokość pensji pracownika
 
 Każdy kontrakt reprezentowany jest przez obiekt udostępniający publicznie następujące operacje:
 
-DONE * metodę o nazwie Pensja(), która zwraca wysokość pensji wypłacanej przy danym kontrakcie.
-DONE * konstruktor pozwalający zainicjować wszystkie pola składowe obiektu
-DONE * konstruktor domyślny
+* metodę o nazwie Pensja(), która zwraca wysokość pensji wypłacanej przy danym kontrakcie.
+* konstruktor pozwalający zainicjować wszystkie pola składowe obiektu
+* konstruktor domyślny
 
 Obecnie w firmie podpisywane są 2 rodzaje kontraktów: staż i etat.
 
